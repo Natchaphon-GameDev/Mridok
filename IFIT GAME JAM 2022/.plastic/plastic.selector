@@ -1,0 +1,4 @@
+repository "IFIT GAME JAM 2022@IFIT_JAM_Team@cloud"
+  path "/"
+    br "/main"
+    co "/main"

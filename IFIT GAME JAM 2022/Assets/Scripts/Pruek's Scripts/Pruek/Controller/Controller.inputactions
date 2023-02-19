@@ -1,0 +1,186 @@
+{
+    "name": "Controller",
+    "maps": [
+        {
+            "name": "PlayerA",
+            "id": "a17120e6-9dee-4e31-a207-36a0e57a3f07",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "4f982a0c-a512-479d-ad71-02052f058a0a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "89bcf327-6dc2-4b20-815b-3eeacf273ab1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Interaction",
+                    "type": "Button",
+                    "id": "2ebef15f-4c9a-42e5-9af5-a4ed5bd0f932",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "81e0b75a-b6b7-4f38-bb07-aebf52ae4ced",
+                    "path": "<Keyboard>/w",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "MoveLR",
+                    "id": "a993536c-8495-4e75-8ccf-a1ba936c14ff",
+                    "path": "1DAxis",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "2d3d9028-52a4-4ce6-a7d1-d8dffa33c804",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "Normalize(max=1)",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "fdb2cd62-392d-47dc-91c2-04b31442afbe",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "Normalize(max=1)",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "27cf995d-71ef-40c4-93b6-c3969e04a963",
+                    "path": "<Keyboard>/e",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interaction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "PlayerB",
+            "id": "4bbb011e-6ff4-440b-b108-ec48e62749e6",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "051b3d0d-0e24-4c74-b095-399cbe462a65",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "a07139b6-4de0-44f8-a851-d7df3694f98a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Interaction",
+                    "type": "Button",
+                    "id": "0f0688e3-008b-495f-badc-39d75550c993",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "339be7eb-0dda-4e77-9d67-0cb7fb040e53",
+                    "path": "<Keyboard>/i",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "MoveLR",
+                    "id": "f96bcf69-43d7-4862-9733-2c4641a46a64",
+                    "path": "1DAxis",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "8472f506-c431-4b58-a1f5-b79b895eff0b",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "Normalize(max=1)",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "61d887e0-49fb-451b-bfee-d067c91cce3a",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "Normalize(max=1)",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "29d86fb9-2009-455c-8e3c-eec73ca71c20",
+                    "path": "<Keyboard>/o",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interaction",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
